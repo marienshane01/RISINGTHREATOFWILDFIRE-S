@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Climate Action Initiative</title>
+  <style>  
+  
+    :root {
+      --green: #2e7d32;
+      --light-green: #a5d6a7;
+      --blue: #03a9f4;
+      --bg: #f9fdfb;
+      --dark: #1b1b1b;
+      --white: #fff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--dark);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--green), var(--blue));
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem 6rem;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background-color: var(--bg);
+      clip-path: ellipse(70% 100% at 50% 100%);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: var(--white);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .hero {
+      margin-top: -3rem;
+    }
+
+    .hero h2 {
+      color: var(--green);
+      font-size: 2.2rem;
+    }
+
+    .hero p {
+      color: #333;
+      font-size: 1.1rem;
+      margin: 1rem auto;
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, var(--green), var(--blue));
+      color: white;
+      border: none;
+      padding: 0.9rem 1.8rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, var(--blue), var(--green));
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card-title {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--green);
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+}
+
+.card-title:hover {
+  color: var(--blue);
+}
+
+
+    .card {
+      background: var(--white);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 2rem 1rem;
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      color: var(--green);
+      margin-bottom: 0.8rem;
+    }
+
+    .join-section {
+      background: linear-gradient(135deg, var(--light-green), var(--blue));
+      color: white;
+      border-radius: 30px;
+      padding: 3rem 2rem;
+      margin-top: 3rem;
+    }
+
+    footer {
+      background: var(--green);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🌍 Climate Action Initiative</h1>
+    <p>Empowering change through technology and sustainability</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#actions">Actions</a>
+    <a href="#contact">Contact</a>
+    <a href="leaflet map.html">Leaflet Map</a>
+  </nav>
+
+  <section class="hero" id="about">
+    <h2>Together for a Sustainable Future</h2>
+    <p>About Climate Action
+Climate action is the effort to protect our planet from the impacts of climate change and create a sustainable future for everyone. It involves three important steps: monitoring the environment to understand problems like pollution and deforestation, reducing harmful activities by using clean energy, conserving water, and minimizing waste, and empowering people and communities with the knowledge, tools, and resources they need to make positive changes.
+
+Everyone can play a role in climate action, whether it’s through small daily choices like turning off unused lights, planting trees, or recycling, or through bigger projects in schools and communities. By learning more about climate change and taking action together, we can help slow down global warming, protect wildlife, and ensure a healthier planet for future generations. Climate action is not just about scientists or governments—it’s about all of us making a difference every day.
+
+      The Climate Action Initiative brings together innovators, activists, and technologists to build 
+      digital solutions that reduce carbon footprints, support renewable energy, and restore balance to our planet.
+    </p>
+    <button class="btn">Learn More</button>
+  </section>
+
+ <section id="actions">
+  <h2>🌿 Our Core Actions</h2>
+  <div class="cards">
+
+  <div class="card" onclick="monitor()">
+    <a href="monitor.html" class="card-title">Monitor</a>
+    <p>Use sensors and data analytics to track real-time environmental impact.</p>
+  </div>
+
+  <div class="card">
+    <a href="reduce.html" class="card-title">Reduce</a>
+    <p>Implement smart technologies that lower emissions and waste output.</p>
+  </div>
+
+  <div class="card">
+    <a href="empower.html" class="card-title">Empower</a>
+    <p>Engage communities and developers to build climate-conscious solutions.</p>
+
+</div>
+
+
+  </div>
+</section>
+
+
+  <section id="contact">
+    <h2>📩 Contact Us</h2>
+    <p>Email: <a href="mailto:info@climateaction.org" style="color:#080808; text-decoration:underline;">Greentek-Crew@gmail.com</a></p>
+  </section>
+
+  <footer>
+    © 2025 Climate Action Initiative | Designed by Greentek Crew
+  </footer>
+</body>
+</html>
