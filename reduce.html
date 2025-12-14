@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Action Project - Reduce Bukidnon Wildfires</title>
+    <style>
+        /* Embedded Style CSS (same as monitor/empower.html for consistency) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f2f9f2; /* Soft green background */
+            color: #2d3436;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%); /* Gradient green header */
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            background-color: rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .reduce-section {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+        }
+
+        .reduce-section h2 {
+            color: #2e7d32; /* Dark green heading */
+            font-size: 1.9rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #4caf50;
+            display: inline-block;
+        }
+
+        .reduce-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .reduce-text {
+            flex: 1 1 300px;
+        }
+
+        .reduce-text p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+        }
+
+        .reduce-text ul {
+            list-style-type: none;
+            margin-left: 1rem;
+        }
+
+        .reduce-text li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .reduce-text li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+        }
+
+        .reduce-image {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .reduce-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .action-grid {
+            background-color: #e8f5e9; /* Light green accent */
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .action-grid h3 {
+            color: #2e7d32;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .action-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .action-card h4 {
+            color: #2e7d32;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .reduce-section {
+                padding: 1.5rem;
+            }
+
+            .reduce-section h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Climate Action Project: Bukidnon Wildfire Response</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="reduce.html">Reduce Risks</a>
+            <a href="empower.html">Empower Communities</a>
+            <a href="monitor.html">Monitor Wildfires</a>
+            <a href="leaflet map.html">Wildfire Map</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reduce-section">
+            <h2>REDUCE: Preventing Wildfires in Bukidnon</h2>
+            
+            <div class="reduce-content">
+                <div class="reduce-text">
+                    <p>Most wildfires in Bukidnon are human-caused — from unregulated agricultural burning to careless disposal of flammable materials. Reducing wildfire risks starts with simple, intentional actions that protect our forests, wildlife, and livelihoods while fighting climate change.</p>
+
+                    <p>Since Bukidnon’s economy relies heavily on agriculture and eco-tourism, preventing fires is critical for both people and the planet. Here’s how we can all work together to reduce wildfire threats:</p>
+
+                    <ul>
+                        <li>Avoid open burning for farming — use composting or no-till methods instead</li>
+                        <li>Dispose of cigarette butts properly (never throw them in dry grass/forests)</li>
+                        <li>Keep fire pits at least 10 meters away from trees and brush, and extinguish completely</li>
+                        <li>Clear dry vegetation around homes and farms to create firebreaks</li>
+                        <li>Report illegal burning or suspicious activity to local authorities immediately</li>
+                        <li>Support reforestation projects to restore dry, fire-prone areas with native trees</li>
+                    </ul>
+                </div>
+
+                <div class="reduce-image">
+                    <img src="https://img.freepik.com/premium-vector/forest-fire-poster-design-with-editable-text_349618-37259.jpg" 
+                         alt="Protect our Forest">
+                </div>
+            </div>
+
+            <div class="action-grid">
+                <h3>Action Plans for Different Groups in Bukidnon</h3>
+                <div class="grid-cards">
+                    <div class="action-card">
+                        <h4>For Farmers</h4>
+                        <p>Adopt sustainable farming practices like "slash-and-mulch" instead of slash-and-burn. Join local training on organic composting to improve soil health without burning.</p>
+                    </div>
+                    <div class="action-card">
+                        <h4>For Communities</h4>
+                        <p>Organize quarterly clean-ups to remove flammable debris from public areas. Set up neighborhood fire watch teams during dry seasons.</p>
+                    </div>
+                    <div class="action-card">
+                        <h4>For Students</h4>
+                        <p>Start a school climate club to teach peers about wildfire prevention. Host poster contests to spread awareness in your barangay.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Climate Action Project - Bukidnon Wildfire Initiative</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Contact us: <a href="mailto:info@wildfireawareness.org" style="color: white; text-decoration: underline;">info@wildfireawareness.org</a></p>
+    </footer>
+</body>
+</html>
