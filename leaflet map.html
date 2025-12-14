@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildfire Map of Bukidnon</title>
+    <!-- Consistent embedded CSS from empower/monitor/reduce/index pages -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f2f9f2; /* Soft green background */
+            color: #2d3436;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%); /* Gradient green header */
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            background-color: rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .map-section {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .map-section h2 {
+            color: #2e7d32; /* Dark green heading */
+            font-size: 1.9rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #4caf50;
+            display: inline-block;
+        }
+
+        .map-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+
+        #map {
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0ebe0;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p:last-child {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .map-section {
+                padding: 1.5rem;
+            }
+
+            .map-section h2 {
+                font-size: 1.6rem;
+            }
+
+            #map {
+                height: 400px;
+            }
+        }
+    </style>
+    <!-- Updated Leaflet CSS to match your leaflet map.js v1.9.4 -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+</head>
+<body>
+    <header>
+        <h1>THE RISING THREAT OF WILDFIRE'S</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="empower.html">Empower Communities</a>
+            <a href="leaflet map.html">Wildfire Map</a>
+            <a href="monitor.html">Monitor Wildfires</a>
+            <a href="reduce.html">Reduce Risks</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="map-section">
+            <h2>Wildfire Risk Zones & Incidents in Bukidnon</h2>
+            <p>This interactive map shows high-risk wildfire areas and recent incidents in Bukidnon. Click on markers for details on risk levels, prevention strategies, and response efforts.</p>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Wildfire Awareness</p>
+        <p>Contact us: <a href="mailto:info@wildfireawareness.org">info@wildfireawareness.org</a></p>
+    </footer>
+
+    <!-- Updated Leaflet JS to match your leaflet map.js v1.9.4 -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    <script src="leaflet map.js"></script>
+</body>
+</html>
